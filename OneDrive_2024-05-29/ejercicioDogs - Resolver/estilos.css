@@ -1,0 +1,168 @@
+﻿@font-face{
+    src: url(GoodDog.TTF);  
+    font-family: GoodDog;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: #ffc82f;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 30px;
+    /* width: 1080%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    margin: 0;
+}
+
+main .titulo{
+    border-bottom: 1px solid #247eb0;
+    margin-bottom: 10px;
+}
+
+    main .titulo h2{
+        display: inline;
+        color: #247eb0;
+    }
+
+    main .titulo input{
+        box-sizing: border-box;
+        width: 299px;
+        border: 1px solid lightgrey;
+        background-image: url(/imgs/search.png);
+        background-repeat: no-repeat;
+        padding-left: 3px 3px 3px 30px;
+        background-size: contain;
+        float: right;
+    }
+
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 10px; */
+        justify-content: space-around;/*se pega a la izq y derecha, el otro espacio lo distribuye entre los elementos
+        center da los elementos centrados pero con espacio en las orillas*/
+    }
+
+        .list a{
+            /* background-color: rebeccapurple; */
+            width: 150px;
+            height: 130px;
+            font-size: small;
+            text-align: center;
+        }
+
+            .list a img{
+                padding: 5px;
+                box-sizing: border-box;
+                border: 1px solid lightgray;
+                width: 100%;/*es el width del dad container which is a*/
+            }
+
+header{
+    padding: 20px;
+    background-color: #f1b30f;
+    border-bottom: 1px groove black ;
+    margin-bottom: 10px;
+}
+
+header h1{
+    font-family: GoodDog;
+    background-image: url(/imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*para que se ajuste al tamaño que lo contiene*/
+    padding-left: 90px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 a{
+    font-size: 70px;
+    color: #564100;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #564100;
+    border-top: 1px solid #f1b30f;
+}
+
+/*INFO ABOUT DOGGOS */
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "head head"
+        "description fotos"
+        "otrosPerros otrosPerros";
+}
+
+.head{
+    grid-area: head;
+    background-color:#247eb0;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.description{
+    grid-area: description;
+    background-color: green;
+    text-align: justify;
+    font-size: medium;
+}
+    .description p{
+        font-size: large;
+        text-align: justify;
+        
+    }
+    .description .datos{
+        background-color: chartreuse;
+        width: 50%; /*es del 50 per de su dad*/
+        float: left;
+
+    }
+        .description .datos label{
+            color: #247eb0;
+        }
+
+.fotos{
+    grid-area: fotos;
+    background-color: brown;
+}
+    .fotos img{
+        width: 100%;
+    }
+
+.otrosPerros{
+    grid-area: otrosPerros;
+    display: flex;
+    gap: 10px;
+    background-color: blue;
+}
+    .otrosPerros a {
+        width: 25%;
+        background-color: blueviolet;
+    }
+    .otrosPerros a img{
+        width: 100%;
+    }

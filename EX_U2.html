@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>EXAMEN U2</title>
+</head>
+<body>
+    <div id="Formulario">
+        <form>
+            <h3>Los campos marcados con * son de inserción obligatoria</h3>
+
+            <label>Asunto</label><br />
+            <input type="text" /><br />
+            <label>*Primer Apellido:</label><br />
+            <input type="text" required /><br /> <!-- falta ponerlo obligatorio-->
+            <label>Segundo Apellido:</label><br />
+            <input type="text" /><br />
+            <label>*Nombre: </label><br />
+            <input type="text" required /><br />
+            <label>NSS/Pasaporte/TFE</label><br />
+            <input type="text" /><br />
+            <label>Correo electrónico</label><br />
+            <input type="email" placeholder="ejemplo@gmail.com" /><br />
+            <label>Teléfono</label><br />
+            <input type="tel" /><br />
+            <label>Información sobre el curso ?</label>
+            <select>
+                <optgroup label="HTML">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                </optgroup>
+            </select>
+
+            <br />
+            <label>Género</label><br />
+            <input type="radio" id="h" name="g" /><label for="h">    Hombre  </label>
+            <input type="radio" id="m" name="g" /><label for="m">Mujer</label><br />
+            <label>Fecha de nacimiento </label><input type="datetime-local" /><br /><!-- falta -->
+            <label>Describa por qué le gusta el curso</label><br />
+            <textarea cols="70" rows="5"></textarea><br />
+            <input type="button" value="Enviar" />
+            <br />
+            <br />
+
+        </form>
+
+    </div>
+    <div id="tabla">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Lengua</th>
+                    <th>Moneda</th>
+                    <th>Área</th>
+                    <th>Población</th>
+                    <th>Densidad</th>
+                </tr>
+                <tr>
+                    <td>Londres</td>
+                    <td>Inglés</td>
+                    <td>GBP</td>
+                    <td>1,572.00 km<sup>2</sup></td>
+                    <td>8,416,535</td>
+                    <td>5,354/km<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Washington</td>
+                    <td>Inglés</td>
+                    <td>USD</td>
+                    <td>177.0 km<sup>2</sup></td>
+                    <td>646,449</td>
+                    <td>4,066/km <sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Moscú</td>
+                    <td>Ruso</td>
+                    <td>RUB</td>
+                    <td>2,511 km<sup>2</sup></td>
+                    <td>11,503,501</td>
+                    <td>4,581.24/km<sup>2</sup></td>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+</body>
+</html>

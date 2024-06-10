@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>iframe</title>
+</head>
+<body>
+    <h1>Etiqueta iframe</h1>
+    <iframe src="https://itesrc.edu.com"></iframe>
+
+    <h2>Mapa del itesrc</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1411.9861626566185!2d-101.16898960418082!3d27.901645833708734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868adcd1e3fe17f5%3A0x51f0ac8604951cab!2sInstituto%20Tecnol%C3%B3gico%20de%20Estudios%20Superiores%20De%20La%20Regi%C3%B3n%20Carbon%C3%ADfera!5e0!3m2!1ses-419!2smx!4v1709324144570!5m2!1ses-419!2smx" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+    <h2>Conferencia vence tus miedos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GcBSKCuC8PI?si=gLthMORMTgQvXH4M" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+    </iframe>
+
+    <h1>ETIQUETAS DE FORMULARIO</h1>
+    <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="Nombre Completo" />
+        <br />
+        <label>Dirección</label>
+        <input type="text" />
+        <br />
+        <label>Teléfono</label>
+        <input type="tel" />
+        <br />
+        <label>Correo electrónico</label>
+        <input type="email" required />
+        <br />
+        <label>¿Cuál es tu color favorito?</label>
+        <input type="color" />
+        <br />
+
+        <label>Selecciona las materias que te gustan</label>
+        <br />
+        <input type="checkbox" id="abd" />
+        <label for="abd">Administración de BD</label>
+        <br />
+        <input type="checkbox" id="is" />
+        <label for="is">Ingeniería de Software</label>
+        <br />
+        <input type="checkbox" id="dw" />
+        <label for="dw">Diseño web</label>
+        <br />
+        <label>Sexo:</label>
+        <br />
+        <input type="radio" id="f" name="s" /><label for="f">Femenino</label><br /><!-- s from group sexo-->
+        <input type="radio" id="m" name="s" /><label for="m">Masculino</label><br />
+        <label>Escribe tu password:</label>
+        <input type="password" />
+        <br />
+        <label>Sube tu fotografía</label>
+        <input type="file" /><!-- -->
+        <label>Fecha de nacimiento</label> mandar la notificacion checa que si vaya en blanco avise que no debe dejar el campo vacío -->
+        <br />
+        <label>Edad</label>
+        <input type="date" /><!-- -->
+        <br />
+        <input type="date" required />
+        <!--al momento de
+    <input type="datetime" />
+    <br />
+    <input type="datetime-local" />
+    <br />
+    <input type="month" />
+    <br />
+    <label>Campo oculto</label>
+    <input type="hidden" /><!-- lo utilizamos para mandar datos a otro formulario que no se da cuenta quíén está modificando el formulario
+                               like adding the user's ID-->
+        <fieldset>
+            <legend>Botones</legend>
+            <input type="submit" />
+            <input type="reset" />
+            <input type="button" value="Calcular" />
+            <button>
+                <ol>
+                    <li>uno</li>
+                    <li>two</li>
+                </ol>
+            </button>
+            <img src="https://i.pinimg.com/originals/f8/59/45/f85945838253eac8fb11a9e8463efed0.jpg" width="170" height="200" alt="Ponyo Wallpaper | Studio ghibli art, Ghibli artwork, Studio ghibli  background" />
+        </fieldset>
+        <label>Escribe aqui tus comentarios</label>
+        <br />
+        <textarea placeholder="No se permiten obsenidades pelé" cols="50" rows="10"></textarea> <!-- aunque le hayamos especificado las columnas y renglones, podemos modificarlo-->
+
+        <fieldset>
+            <legend>Selects</legend>
+            <select>
+                <optgroup label="Animales de cuatro patas"><!-- para organizar mejor jee-->
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option>Tigre</option>
+                </optgroup>
+                <optgroup label="Animales de dos patas">
+                    <option>Cotorro</option>
+                    <option ></option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>

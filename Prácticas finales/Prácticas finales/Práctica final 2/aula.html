@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+   
+</head>
+<body>
+    <header></header>
+
+    <nav>
+       
+        <a href="carrera.html" class="carrera">Carreras</a>
+        <a href="materia.html" class="materia">Materias</a>
+        <a href="aula.html" class="activo aula">Aulas</a>
+        <a href="docente.html" class="docente">Docentes</a>
+    </nav>
+
+    <form>
+        <h2>Captura de aulas:</h2>
+
+
+        <label>Clave:</label>
+        <input type="text" id="txtClaveAula" />
+
+        <label>Nombre:</label>
+        <input type="text" id="txtNombreAula" />
+
+        <label>Edificio:</label>
+        <input type="text" id="txtEdificio" list="lstEdificios" />
+
+        <datalist id="lstEdificios">
+            <option>Edificio A</option>
+            <option>Edificio B</option>
+            <option>Edificio C</option>
+            <option>Centro de Cómputo</option>
+        </datalist>
+
+        <label>Tipo:</label>
+        <span><input type="radio" id="txtSalon" /><label for="txtSalon">Salón de Clase</label><input type="radio" id="txtSalon" /><label for="txtLaboratorio">Laboratorio</label><input type="radio" id="txtLaboratorio" /><label for="txtTaller">Taller</label></span>
+
+        <label>Equipamiento:</label>
+        <span>
+            <input type="checkbox" /><label>Equipo Audiovisual</label>
+            <input type="checkbox" /><label>Aire Acondicionado</label>
+            <input type="checkbox" /><label>Computadoras</label>
+            <input type="checkbox" /><label>Internet</label>
+            <input type="checkbox" /><label>Equipo Especializado</label>
+            <input type="checkbox" /><label>Agua</label>
+            <input type="checkbox" /><label>Gas</label>
+        </span>
+
+
+        <div class="botonera">
+            <input type="button" value="Agregar" />
+            <input type="button" value="Cancelar" />
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+html{
+    background-color: rebeccapurple;
+}
+body{
+    background-color: white;
+    font-family: "Nunito Sans";
+    width: 1100px;
+    height: 560px;
+    justify-content: center;
+    padding: 10px 10px 10px 5px;
+    margin: auto;
+    margin-top: 30px;
+    /* align-content: center; */
+}
+
+header{
+    padding: 5px 10px 10px 5px; /*restar este oaddinf */
+    border-radius: 3px;
+    background-color: #2c3e50;
+    height: 20px; /*restar este al height del body*/
+}
+
+header h1{
+    display: inline;
+    background-image: url(images/www.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: medium;
+    font-weight: normal;
+    color: white;
+    background-color: plum;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+header nav, a{
+    display: inline;
+    color: white;
+    padding-right: 25px;
+    font-size: small;
+    background-color: #18bcb4;
+}
+
+header nav .derecha{
+    background-color: chocolate;
+    float: right;
+}
+/* header nav, div, a.derecha{
+    background-color: chocolate;
+    float: inline-end;
+} */
+
+
+#uno a:nth-of-type(1){
+    background-image: url(images/user.png);
+    background-size: 12px;
+    background-position: left;
+    padding-left: 16px;
+    background-repeat: no-repeat;
+}
+
+#uno a:nth-of-type(2){
+    background-image: url(images/pencil.png);
+    background-size: 12px;
+    background-position: left;
+    padding-left: 16px;
+    background-repeat: no-repeat;
+}
+
+#uno a:nth-of-type(3){
+    background-image: url(images/book.png);
+    background-size: 12px;
+    background-position: left;
+    padding-left: 16px;
+    background-repeat: no-repeat;
+}
+
+#uno a:nth-of-type(1){
+    background-image: url(images/dollar.png);
+    background-size: 12px;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 16px;
+}
+
+#uno a:nth-of-type(2){
+    background-image: url(images/question-mark.png);
+    background-size: 12px;
+    background-position: left;
+    padding-left: 16px;
+    background-repeat: no-repeat;
+}
+
+main{
+    font-family: "Nunito Sans";
+    background-color: #ECF0F1;
+    color: #2c3e50;
+    margin-top: 15px;
+    padding: 25px 35px 35px 40px;
+    border-radius: 3px;
+    /* background-color: rebeccapurple; */
+}
+
+main h1{
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0px;
+}
+
+footer{
+    margin: 15px 0px 0px 0px ;
+    padding-top: 20px;
+    border-top: 1px solid #ECF0F1 ;
+}
+
+footer h6{
+    font-size: small;
+    font-weight: initial;
+    color: grey;
+    display: inline;
+}
+
+footer nav {
+    color: #ECF0F1;
+    display: inline;
+    float: right;
+}
+
+footer nav a{
+    font-size: small;
+    color: #18bcb4;
+    padding: 0px;
+}
+

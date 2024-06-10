@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>AudioVideo</title>
+</head>
+<body>
+    <h1>Etiquetas de audio y video</h1>
+    <h2>Etiquetas de audio</h2>
+    <audio src="Assets/Assets/horse.mp3" controls autoplay loop></audio>
+    <audio controls><!--si no le ponemos controls no se ven las flechitas and stuff-->
+        <source src="Assets/Assets/horse.mp3" type="audio/mp3"/>
+        <source src="Assets/Assets/horse.ogg" type="audio/ogg" />
+    </audio>
+    <br />
+    <h2>Etiquetas de video</h2>
+    <video controls poster="Assets/Assets/img1.jpg">
+        <source src="Assets/Assets/movie.mp4" type="video/mp4" />
+    </video>
+    <video controls>
+        <source src="Assets/Assets/google1.mp4" type="video/mp4" />
+    </video>
+</body>
+</html>

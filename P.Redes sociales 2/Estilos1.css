@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 640px;
+    height: 340px; 
+    margin: 50px auto;
+}
+
+body main{
+    width: 560px;
+    height: 340px;
+    background-image: url(Assets/background.png);
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    margin-right: 10px;
+    float: left;
+}
+
+main img{
+    width: 170px;
+    height: 170px;
+    border-radius: 180px;
+    border: 10px solid white;
+    margin-left: 190px;
+    margin-top: 50px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.15);;
+}
+
+main section{ 
+    padding-top: 35px;
+    margin-top: -37px;
+    height: 150px;
+    width: 100%;
+    color: grey;
+    background-color:whitesmoke ;
+    align-content: center;
+    
+}
+
+section div{
+    /* margin:auto; */
+    margin-bottom: 20px;
+    float: left;
+    text-align: center;
+    width: 180px;
+}
+
+section div:nth-child(2){
+    border-left: 1.5px solid lightgray;
+    border-right: 1.5px solid lightgrey;
+}
+
+/* section div:first-child{
+    margin-left: 10px;
+} */
+
+div p:nth-of-type(1){
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div p:last-child{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#enlaces{
+    width: 80px;
+    height: 340px;
+    background-color: grey;
+    border: 1px solid black;
+    display: inline;
+    position: absolute;
+    padding: 0px 5px 5px 6px;
+}
+
+body #enlaces a{
+    color: transparent;
+    /* background-size:contain; */
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+} 
+
+a{
+    margin-top: 13px;
+}
+
+#enlaces #facebook{
+    background-image: url(Assets/facebook.png);
+}
+
+#enlaces #twitter{
+    background-image: url(Assets/twitter.png);
+}
+
+#enlaces #plus{
+    background-image: url(Assets/googleplus.png);
+}
+
+#enlaces #instagram{
+    background-image: url(Assets/instagram.png);
+}
+ 
+
+

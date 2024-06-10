@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Solicitud de empleo</title>
+</head>
+<body>
+    <h1>Solicitud de empleo</h1>
+    <div>
+        <fieldset>
+            <legend>Fotografía</legend>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gkd0qUkv1F9epnQv4Wv0cgvrsGkJ7pETR3VEbPF1ne6SGhhkYXybBInQ5CGShqmPtyE&usqp=CAU" width="80" height="80" alt="Silueta gris" /><br />
+            <input type="file" value="No se eligió archivo."/>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label>Apellido Paterno:<input type="text" /></label>
+            <label>     Apellido Materno:<input type="text" /></label><br />
+            <label>Nombre(s):<input type="text" /></label><br />
+            <label>Fecha de nacimiento: <input type="date" /></label>
+            <label>Edad: <input type="number" /></label>
+            <label>Sexo:</label>
+
+            <!-- para poder seleccionar un solo radiobutton debemos asignarles un mismo nombre-->
+            <label for="m">
+                Masculino
+                <input type="radio" id="m" name="sexo" />
+            </label>
+            <label for="f">
+                Femenino
+                <input type="radio" id="f" name="sexo" />
+            </label>
+            <br />
+
+            <label>Dirección: <input type="text" placeholder="Calle, Numero y Colonia" /></label><br />
+            <label>Estado:</label>
+            <select>
+                <optgroup label="Estados">
+                    <option>Aguascalientes</option>
+                </optgroup>
+            </select>
+
+            <label>Municipio:</label>
+            <select>
+                <optgroup label="Municipios">
+                    <option>.. Seleccione ..</option>
+                </optgroup>
+            </select>
+            <br />
+
+            <label>Teléfono: <input type="tel" placeholder="Con clave LADA"/></label>
+            <label>  Correo electrónico: <input type="email"/></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del Puesto</legend>
+            <label>Fecha:
+                <select>
+                    <optgroup label="Día">
+                        <option>1</option>
+                    </optgroup>
+                </select>
+            de
+                <select>
+                    <optgroup label="Mes">
+                        <option>Enero</option>
+                    </optgroup>
+                </select>
+            del
+                <select>
+                    <optgroup label="Año">
+                        <option>2000</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br />
+
+            <label>Puesto que se solicita: <input type="text"/></label><br />
+            <label>Sueldo deseado: $<input type="number" placeholder="0.00"/></label>
+            <label>Escriba las razones por las cuales considera que usted es la persona
+            adecuada para el puesto:</label><br />
+            <textarea placeholder="De manera clara y concisa"></textarea>
+
+        </fieldset>
+        <br />
+        <input type="checkbox"/><label>Confirmo que los datos son reales</label><br />
+        <input type="button" value="Enviar solicitud" />
+        <input type="button" value="Cancelar"/>
+    </div>
+</body>
+</html>

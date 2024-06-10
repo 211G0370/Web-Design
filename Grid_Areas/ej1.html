@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_areas</title>
+    <style>
+        /*ajustar el alto de mis elementos al del dispositivo*/
+        html{
+            height: 100%;
+        }
+
+        body{
+            display: grid;
+            min-height: 100%;
+            margin: 0;
+            gap: 10px;
+            grid-template-rows: 100px 50px auto auto auto; /*pixeles por cada elemento del grid, de acuerdo a su orden*/
+            grid-template-areas: 
+            "header"
+            "nav"
+            "aside"
+            "main"
+            "footer";
+        }
+
+        header{
+            background-color: cornflowerblue;
+            grid-area: header; /*es el nombre del area, cuando las agg tenemos que indicar en qué orden deben 
+            aparecer. Esto se hace en el body con la propiedad grid template areas*/
+        }
+        nav{
+            background-color:darkseagreen;
+            grid-area: nav;
+        }
+
+        main{
+            background-color: chocolate;
+            grid-area: main;
+        }
+
+        aside{
+            background-color:darkmagenta;
+            grid-area: aside;
+        }
+
+        footer{
+            background-color: darkslateblue;
+            grid-area: footer;
+        }
+
+        /*media query, que cuando el body tenga el min length de 600, haga tal*/
+        @media (min-width:600px){
+            body{
+                grid-template-rows: 100px 50px auto 50px;
+                grid-template-columns: 200px auto;/*este representa el ancho*/
+                grid-template-areas: 
+                "header header" /*cada uno representa una columna*/
+                "nav nav"
+                "aside main"
+                "footer footer";
+            }
+        }
+
+        @media (min-width:900px){
+            body{
+                grid-template-rows: 300px auto 50px;
+                grid-template-columns: 200px auto 200px;
+                grid-template-areas: 
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <footer>Footer</footer>
+
+</body>
+</html>
