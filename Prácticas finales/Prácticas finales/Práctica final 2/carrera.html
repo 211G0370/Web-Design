@@ -2,40 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <link href="estilos7.css" rel="stylesheet"/>
+    <title>Hawks</title>
+    <link rel="shortcut icon" href="images/hawk.ico">
     
 </head>
 <body>
-    <header></header>
+    <div class="container" id="container">
+        
+        <aside class="infonav-container">
+            <h1>Welcome Hawk!</h1>
+            <p>Register your personal info below</p>
+            <nav class="nav-buttons">
+                <a href="carrera.html">
+                    <img  class="img-nav" src="images/carrera.png">
+                </a>
+                <a href="materia.html">
+                    <img class="img-nav" src="images/materia.png">
+                </a>
+                <a href="aula.html">
+                    <img class="img-nav" src="images/aula.png">
+                </a>
+                <a href="docente.html">
+                    <img class="img-nav" src="images/docente.png">
+                </a>
+            </nav>
+        </aside>
 
-    <nav>
-       
-        <a href="carrera.html" class="activo carrera">Carreras</a>
-        <a href="materia.html" class="materia">Materias</a>
-        <a href="aula.html" class="aula">Aulas</a>
-        <a href="docente.html" class="docente">Docentes</a>
-    </nav>
-
-    <form>
-        <h2>Captura una nueva carrera:</h2>
-        <label>Clave:</label>
-        <input type="text" id="txtClave" />
-
-        <label>Nombre:</label>
-        <input type="text" id="txtNombre" />
-
-        <label>Especialidad</label>
-        <input type="text" id="txtEspecialidad" />
-
-        <label>Descripción:</label>
-        <textarea placeholder="Descripción y objetivos de la carrera" rows="7" id="txtDescripción"></textarea>
-
-
-        <div class="botonera">
-            <input type="button" value="Agregar" />
-            <input type="button" value="Cancelar" />
-        </div>
-    </form>
+        <main class="form-container">
+                
+            <form class="form-type2">
+                <h2 class="h2-type2">Insert a new career </h2>
+                <label>Key:</label>
+                <input type="text" id="txtClave" />
+        
+                <label>Name:</label>
+                <input type="text" id="txtNombre" />
+        
+                <label>Specialty</label>
+                <input type="text" id="txtEspecialidad" />
+        
+                <label>Description:</label>
+                <textarea placeholder="General description and the career goals" rows="7" id="txtDescripción"></textarea>
+        
+        
+                <div class="botonera">
+                    <input type="button" value="Add" />
+                    <input type="button" value="Cancel" />
+                </div>
+            </form>
+        </main>
+    </div>
 
 </body>
 </html>

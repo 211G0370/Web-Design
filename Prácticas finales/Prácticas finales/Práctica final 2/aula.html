@@ -2,60 +2,81 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <link href="estilos7.css" rel="stylesheet"/>
+    <title>Hawks</title>
+    <link rel="shortcut icon" href="images/hawk.ico">
    
 </head>
 <body>
-    <header></header>
+    <div class="container" id="container">
+        
+        <aside class="infonav-container">
+            <h1>Welcome Hawk!</h1>
+            <p>Register your personal info below</p>
+            <nav class="nav-buttons">
+                <a href="carrera.html">
+                    <img  class="img-nav" src="images/carrera.png">
+                </a>
+                <a href="materia.html">
+                    <img class="img-nav" src="images/materia.png">
+                </a>
+                <a href="aula.html">
+                    <img class="img-nav" src="images/aula.png">
+                </a>
+                <a href="docente.html">
+                    <img class="img-nav" src="images/docente.png">
+                </a>
+            </nav>
+        </aside>
 
-    <nav>
-       
-        <a href="carrera.html" class="carrera">Carreras</a>
-        <a href="materia.html" class="materia">Materias</a>
-        <a href="aula.html" class="activo aula">Aulas</a>
-        <a href="docente.html" class="docente">Docentes</a>
-    </nav>
-
-    <form>
-        <h2>Captura de aulas:</h2>
-
-
-        <label>Clave:</label>
-        <input type="text" id="txtClaveAula" />
-
-        <label>Nombre:</label>
-        <input type="text" id="txtNombreAula" />
-
-        <label>Edificio:</label>
-        <input type="text" id="txtEdificio" list="lstEdificios" />
-
-        <datalist id="lstEdificios">
-            <option>Edificio A</option>
-            <option>Edificio B</option>
-            <option>Edificio C</option>
-            <option>Centro de Cómputo</option>
-        </datalist>
-
-        <label>Tipo:</label>
-        <span><input type="radio" id="txtSalon" /><label for="txtSalon">Salón de Clase</label><input type="radio" id="txtSalon" /><label for="txtLaboratorio">Laboratorio</label><input type="radio" id="txtLaboratorio" /><label for="txtTaller">Taller</label></span>
-
-        <label>Equipamiento:</label>
-        <span>
-            <input type="checkbox" /><label>Equipo Audiovisual</label>
-            <input type="checkbox" /><label>Aire Acondicionado</label>
-            <input type="checkbox" /><label>Computadoras</label>
-            <input type="checkbox" /><label>Internet</label>
-            <input type="checkbox" /><label>Equipo Especializado</label>
-            <input type="checkbox" /><label>Agua</label>
-            <input type="checkbox" /><label>Gas</label>
-        </span>
-
-
-        <div class="botonera">
-            <input type="button" value="Agregar" />
-            <input type="button" value="Cancelar" />
-        </div>
-    </form>
+        <main class="form-container">
+            <form class="form-type2">
+                <h2 class="h2-type2">Capture your buildings</h2>
+                <label>Key:</label>
+                <input type="text" id="txtClaveAula" />
+        
+                <label>Name:</label>
+                <input type="text" id="txtNombreAula" />
+        
+                <label>Building:</label>
+                <input type="text" id="txtEdificio" list="lstEdificios" />
+        
+                <datalist id="lstEdificios">
+                    <option>Building A</option>
+                    <option>Building B</option>
+                    <option>Building C</option>
+                    <option>Computing center</option>
+                </datalist>
+        
+                <label>Type:</label>
+                <span>
+                    <input class="txtMantener" type="radio" id="txtSalon" />
+                    <label for="txtSalon">Classroom</label>
+                    <input class="txtMantener" type="radio" id="txtSalon" />
+                    <label for="txtLaboratorio">Lab</label>
+                    <input class="txtMantener" type="radio" id="txtLaboratorio" />
+                    <label for="txtTaller">Club</label>
+                </span>
+        
+                <label>Equipment:</label>
+                <span class="bigspan">
+                    <input class="txtMantener" type="checkbox" /><label>Audiovisuals team</label>
+                    <input class="txtMantener" type="checkbox" /><label>Air conditioner</label>
+                    <input class="txtMantener" type="checkbox" /><label>Computers</label>
+                    <input class="txtMantener" type="checkbox" /><label>Internet</label>
+                    <input class="txtMantener" type="checkbox" /><label>Specialized team</label>
+                    <input class="txtMantener" type="checkbox" /><label>Water</label>
+                    <input class="txtMantener" type="checkbox" /><label>Gas</label>
+                </span>
+        
+        
+                <div class="botonera">
+                    <input type="button" value="Add" />
+                    <input type="button" value="Cancel" />
+                </div>
+            </form>
+        </main>
+    </div>
 
 </body>
 </html>

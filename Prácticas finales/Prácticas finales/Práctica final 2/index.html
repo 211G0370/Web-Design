@@ -2,31 +2,49 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos7.css" rel="stylesheet"/>
+    <title>Hawks</title>
+    <link rel="shortcut icon" href="images/hawk.ico">
     
 </head>
 <body>
-    <header></header>
+<!-- 
+    <div class="whate"></div> -->
+    <div class="container" id="container">
+        
+        <aside class="infonav-container">
+            <h1>Welcome Hawk!</h1>
+            <p>Register your personal info below</p>
+            <nav class="nav-buttons">
+                <a href="carrera.html">
+                    <img  class="img-nav" src="images/carrera.png">
+                </a>
+                <a href="materia.html">
+                    <img class="img-nav" src="images/materia.png">
+                </a>
+                <a href="aula.html">
+                    <img class="img-nav" src="images/aula.png">
+                </a>
+                <a href="docente.html">
+                    <img class="img-nav" src="images/docente.png">
+                </a>
+            </nav>
+        </aside>
 
-    
-    <form>
-        <h2>Inicia sesión en tu cuenta</h2>
-
-        <label for="txtUsuario">Usuario:</label>
-        <input id="txtUsuario" type="text" />
-        <label for="txtPassword">Contraseña:</label>
-        <input id="txtPassword" type="password" />
-        <span><input type="checkbox" id="txtMantener" />
-        <label for="txtMantener">Mantener la sesión iniciada</label></span>
-
-        <div class="botonera">
-            <input type="button" value="Aceptar" />
-        </div>
-    </form>
-
-
-
-  
-
+        <main class="form-container">
+            <form class="form-type1">
+                <h2>Sign In</h2>
+                <input id="txtUsuario" type="text" placeholder="Username"/><br>
+                <input id="txtPassword" type="password" placeholder="Password" /><br>
+                <div class="wrap">
+                    <input type="checkbox" class="txtMantener" />
+                    <label for="txtMantener">Keep session logged in </label></span>
+                </div>
+                <input id="btn" type="button" value="Login" />
+                
+            </form>
+        </main>
+    </div>
 </body>
 </html>

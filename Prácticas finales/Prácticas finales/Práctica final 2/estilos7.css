@@ -1,1 +1,311 @@
-﻿
+﻿/*Tablet first styles from 768 to 1024*/
+
+/*Colors
+#0A1D56- dark blue
+#492E87 - dark purple
+#37B5B6 - aqua tec
+#F2F597 - light yellow*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+    --primary: #492E87;
+    --secondary: #37B5B6;
+    --third: #F2F597 ;
+}
+body{
+    overflow-x: hidden;
+}
+
+@media screen and (width>=768px){
+    body{
+        background-color: rgb(230, 230, 230);
+        /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;/*viewport height. percentage of visible screen. 10vh = 10% de la pantalla*/
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*ASIDE  W NAV (TOP PART)*/
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 768px;
+    max-height: 460px;
+}
+
+@media screen and (width>=768px){
+    .container{
+        width: 80%;
+        flex-direction: row;
+        background-color: #37B5B6;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+        position: relative;
+        overflow: hidden;
+        max-width: 100%;
+        min-height: 480px;
+    }
+}
+
+
+.infonav-container{
+    background-color:#492E87 ;
+    color: white;
+    border-radius: 0 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+}
+@media screen and (width>=768px){
+    .infonav-container{
+        width:40%;
+        padding: 2em;
+        display: flex;
+        border-radius: 0 150px 150px 0px;
+        min-width: 455px;
+    }
+}
+    .infonav-container h1{
+        font-size: 5rem;
+    }
+    .infonav-container p{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .infonav-container .nav-buttons{
+        width: 50%;
+        margin-top: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .infonav-container .nav-buttons img{
+        width: 4em;
+        margin: .5em;
+    }
+    @media screen and (width>=768px){
+        .infonav-container h1{
+            font-size: 3.5rem;
+        }
+        .infonav-container p{
+            margin-top:1em;
+            font-size: 1.5rem;
+        }
+        .infonav-container .nav-buttons{
+            width: 100%;
+        }
+        .infonav-container .nav-buttons img{
+            margin: 0;
+            width: 3.5em;
+        }
+    }
+
+/*FORMS*/
+
+.form-container{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (width>=768px){
+    .form-container{
+        width: 100%;
+    }
+}
+    .form-type1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        h2{
+            font-size: 4rem;
+            margin-bottom:.5em;
+        }
+        form #txtUsuario, #txtPassword, #btn{
+            margin-top: .6em;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            background-color: #eee;
+            border: none;
+            padding: 10px 15px;
+            width: 55%;
+        }
+        form .wrap{
+            margin: .6em;
+            width:54%;
+            font-size: 1.5em;
+        }
+        @media screen and (width>=768px){
+            h2{
+                font-size: 2.5rem;
+                margin-bottom: 1em;
+            }
+            form #txtUsuario, #txtPassword, #btn{
+                font-size: 1rem;
+                border: none;
+                padding: 10px 15px;
+                width: 70%;
+            }
+            form .wrap{
+                text-align: center;
+                width:54%;
+                font-size: 1em;
+                margin-bottom: 1.5em;
+            }
+        }
+
+        .txtMantener{
+            width: 1.5em;
+        }
+        #btn{
+            width: 30%;
+            font-weight: 600;
+            background-color: #37B5B6;
+            color: #fff;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+        }
+
+    /* FOR FORMS THAT ARE NOT LOGIN */
+.form-type2{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    overflow: hidden;
+}
+@media screen and (width>=768px){
+    .form-type2{
+        width: 80%;
+        padding: .5em;
+        height: 100%;
+    }
+}
+    .h2-type2{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom:.5em;
+    }
+    .form-type2 label{
+        margin:.7em;
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .form-type2 input{
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: #eee;
+        border: none;
+        padding: 10px 15px;
+    }
+    @media screen and (width>=768px){
+        .h2-type2{
+            font-size: 2rem;
+        }
+        .form-type2 label{
+            margin:.5em;
+            font-size: .8rem;
+        }
+        .form-type2 input{
+            font-size: .8rem;
+        }
+    }
+    .form-type2 textarea{
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: #eee;
+        border: none;
+        padding: 10px 15px;
+        margin-bottom: 1.5em;
+    }
+    .form-type2 select{
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: #eee;
+        border: none;
+        padding: 10px 15px;
+        margin-bottom: 1.5em;
+    }
+        .form-type2 select option{
+            font-size: 1rem;
+        }
+        @media screen and (width>=768px){
+            .form-type2 textarea{
+                font-size: .8rem;
+                margin-bottom: .5em;
+            }
+            .form-type2 select{
+                font-size: .5rem;
+                border-radius: 10px;
+                background-color: #eee;
+                border: none;
+                padding: 10px 15px;
+                margin-bottom: 1.5em;
+            }
+                .form-type2 select option{
+                    font-size: 1rem;
+                }
+        }
+    .botonera{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 2em;
+    }
+    .botonera input{
+        width: 30%;
+        font-weight: 600;
+        background-color: #37B5B6;
+        color: #fff;
+        border-radius: 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    @media screen and (width>=768px){
+        .botonera{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: .5em;
+        }
+        .botonera input{
+            width: 30%;
+            font-weight: 600;
+            background-color: #37B5B6;
+            color: #fff;
+            border-radius: 8px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+    .botonera input:hover{
+        background-color: #e2d633;
+    }
+    .form-type2 .bigspan{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin-left: 3em;
+    }

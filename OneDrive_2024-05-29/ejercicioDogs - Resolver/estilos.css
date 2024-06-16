@@ -133,7 +133,7 @@ footer{
     .description p{
         font-size: large;
         text-align: justify;
-        
+        margin: 0;
     }
     .description .datos{
         background-color: chartreuse;
